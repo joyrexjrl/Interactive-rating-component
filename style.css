@@ -82,17 +82,22 @@ body{
     background-color: hsl(216, 12%, 8%);
 }
 
-h1, p{    
+h1, h2, p{    
     font-family: 'Overpass', sans-serif;
 }
 
-h1{
+h1, h2{
     color: white;
     margin-bottom: .8rem;
+    font-size: 2rem;
 }
 
 p{
     color: hsl(217, 12%, 63%);
+}
+
+.selection{
+    /*display: none;*/
 }
 
 .thanks-page{
@@ -106,7 +111,6 @@ p{
     max-width: 400px;
     padding: 2rem;
     border-radius: 30px;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,7 +118,10 @@ p{
 }
 
 .icon{
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    background-color: hsl(213, 19%, 22%);
+    padding: 0.9rem;
+    border-radius: 50px;
 }
 
 .star-selector{
@@ -147,6 +154,18 @@ p{
     cursor: pointer;
     transition: ease 0.2s;
 }
+
+/* js selection classes start */
+
+.star-selection{
+  background-color: hsl(25, 97%, 53%);
+}
+
+.star-text-selection{
+  color: white;
+}
+
+/* js selection classes end */
 
 .star-spot:hover{
     background-color: hsl(217, 12%, 63%);    
@@ -182,6 +201,40 @@ p{
     color: hsl(25, 97%, 53%);
 }
 
+/* thank you section start */
+
+.thank-you-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.rating-text{
+  background-color: hsl(213, 19%, 22%);
+  padding: .5rem 1.5rem;
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-text{
+  text-align: center;
+}
+
+/* thank you section end */
+
 .attribution{
-    margin-top: 1rem;;
+    margin-top: 1rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution a{
+  text-decoration: none;
+  color: hsl(217, 12%, 63%);
+  transition: ease 0.2s;
+}
+
+.attribution a:hover{
+  color:hsl(25, 97%, 53%);
 }
