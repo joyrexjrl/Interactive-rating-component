@@ -96,11 +96,7 @@ p{
     color: hsl(217, 12%, 63%);
 }
 
-.selection{
-    /*display: none;*/
-}
-
-.thanks-page{
+.hide{
     display: none;
 }
 
@@ -161,7 +157,7 @@ p{
   background-color: hsl(25, 97%, 53%);
 }
 
-.star-text-selection{
+.star-selection span{
   color: white;
 }
 
